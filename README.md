@@ -6,6 +6,12 @@ This project loads and renders a Markdown file based on a URL provided as a quer
 
 Pass a `url` parameter that points to any Markdown file you want to display.
 
+Example:
+
+```
+https://hisazakura.github.io/md-viewer/?url=https://raw.githubusercontent.com/mxstbr/markdown-test-file/master/TEST.md
+```
+
 The app will fetch the Markdown file from the given URL and render it on the page.
 
 ## Features
