@@ -22,7 +22,7 @@ export function SidebarMenuButtonContent({
     href
 }: SidebarMenuButtonContentProps) {
     return (
-        <a href={href} className="flex px-3 py-1 h-8 gap-x-1 items-center">
+        <a href={href} className="flex px-3 py-1 h-8 gap-x-1 items-center w-full">
             {(depth ?? 1) > 1 && (
                 <div className="flex flex-row gap-x-1">
                     {Array.from({ length: (depth ?? 1) - 1 }).map((_, i) => (
@@ -31,7 +31,7 @@ export function SidebarMenuButtonContent({
                 </div>
             )}
             {Icon && <Icon className="h-4" />}
-            <span>{label}</span>
+            <span className="truncate block max-w-full">{label}</span>
         </a>
     );
 }

@@ -54,10 +54,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 <SidebarGroup>
                     <SidebarGroupLabel>Outline</SidebarGroupLabel>
                     <SidebarGroupContent>
-                        <SidebarMenu>
+                        <SidebarMenu className="gap-0">
                             {headings.map((heading, idx) => {
                                 return (
-                                    <SidebarMenuItem key={idx}>
+                                    <SidebarMenuItem key={idx} className="hover:bg-muted">
                                         <SidebarMenuButton asChild>
                                             <SidebarOutlineButton depth={heading.depth} label={heading.label} slug={heading.slug} />
                                         </SidebarMenuButton>
