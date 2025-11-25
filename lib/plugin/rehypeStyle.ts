@@ -71,7 +71,7 @@ const defaultClassMap: Record<string, string> = {
     p: "leading-7",
     a: "hover:underline",
     blockquote: "mb-4 border-l-2 pl-6 italic",
-    pre: "rounded-md border overflow-clip mb-4",
+    pre: "rounded-md border overflow-clip mb-4 relative group",
     table: "w-full",
     thead: "m-0 border-t p-0 bg-muted",
     tr: "m-0 border-t p-0",
