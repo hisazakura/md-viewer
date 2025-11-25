@@ -6,7 +6,7 @@ import remarkGfm from "remark-gfm";
 import rehypeSlug from 'rehype-slug'
 import rehypeSanitize from "rehype-sanitize";
 import rehypeStringify from "rehype-stringify";
-import rehypeAddTailwind from "./plugin/rehypeAddTailwind";
+import rehypeStyle from "./plugin/rehypeStyle";
 
 export async function mdToHtml(content: string) {
     const file = await unified()
@@ -15,7 +15,7 @@ export async function mdToHtml(content: string) {
         .use(remarkRehype, { allowDangerousHtml: false }) // producing HAST
         .use(rehypeSanitize)
         .use(rehypeSlug)
-        .use(rehypeAddTailwind)
+        .use(rehypeStyle)
         .use(rehypeStringify)
         .process(content);
 
