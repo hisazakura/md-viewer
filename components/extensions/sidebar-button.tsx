@@ -30,7 +30,7 @@ export function SidebarMenuButtonContent({
                     ))}
                 </div>
             )}
-            {Icon && <Icon className="h-4" />}
+            {Icon && <Icon className="h-4 min-w-6" />}
             <span className="truncate block max-w-full">{label}</span>
         </a>
     );
